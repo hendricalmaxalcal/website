@@ -238,7 +238,7 @@
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
-
+/* For Header */
 @media (max-width: 768px) {
 
     .hamburger {
@@ -274,5 +274,40 @@
         position: static;
         box-shadow: none;
         width: 100%;
+    }
+}
+
+/* For footer */
+@media (max-width: 768px) {
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footerCenter {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footerCenter p {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .footerRight {
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .footerLeft {
+        padding-right: 0;
+    }
+
+    .footerRight a {
+        font-size: 30px;
     }
 }
