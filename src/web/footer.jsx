@@ -1,4 +1,4 @@
-import styles from "./footer.module.css";
+import styles from "./web.module.css";
 import { MdPhone, MdEmail } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
@@ -9,11 +9,11 @@ function Footer() {
             <div className={styles.footerContent}>
                 <div className={styles.footerCenter}>
                     <p>
-                        <MdPhone /> +255 685 635 835
-                    </p>
-                    <p>
                          © {new Date().getFullYear()} NetIrish. All Rights Reserved.</p>
                     <p>
+                    <p>
+                        <MdPhone /> +255 685 635 835
+                    </p>
                         <MdEmail /> hendricalmaxalcal@gmail.com 
                     </p>
                 </div>
