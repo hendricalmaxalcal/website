@@ -39,28 +39,6 @@ function Header() {
             <nav className={styles.nav} ref={dropdownRef}>
                 <a href="#home">Home</a>
 
-                {/* Services Dropdown */}
-                <div className={styles.dropdown}>
-                    <button
-                        className={styles.navBtn}
-                        onClick={() => {
-                            setShowServices(!showServices);
-                            setShowProducts(false);
-                        }}
-                    >
-                        Services
-                    </button>
-
-                    {showServices && (
-                        <div className={styles.dropdownMenu}>
-                            <a href="#webdev">Web Development</a>
-                            <a href="#security">Cyber Security</a>
-                            <a href="#networking">Networking</a>
-                            <a href="#consulting">IT Consulting</a>
-                        </div>
-                    )}
-                </div>
-
                 {/* Products Dropdown */}
                 <div className={styles.dropdown}>
                     <button
@@ -82,6 +60,29 @@ function Header() {
                         </div>
                     )}
                 </div>
+
+                {/* Services Dropdown */}
+                <div className={styles.dropdown}>
+                    <button
+                        className={styles.navBtn}
+                        onClick={() => {
+                            setShowServices(!showServices);
+                            setShowProducts(false);
+                        }}
+                    >
+                        Services
+                    </button>
+
+                    {showServices && (
+                        <div className={styles.dropdownMenu}>
+                            <a href="#webdev">Website Development</a>
+                            <a href="#security">Internet Connection</a>
+                            <a href="#networking">Vulnerability Assessment</a>
+                            <a href="#consulting">IT Consulting</a>
+                        </div>
+                    )}
+                </div>
+
 
                 <a href="#about">About Us</a>
             </nav>
