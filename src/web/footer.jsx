@@ -1,6 +1,6 @@
 import styles from "./web.module.css";
 import { MdPhone, MdEmail } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -22,7 +22,7 @@ function Footer() {
                     <a href="#"><FaWhatsapp /></a>
                     <a href="#"><FaInstagram /></a>
                     <a href="#"><FaFacebook /></a>
-                    <a href="#"><FaLinkedin /></a>
+                    <a href="#"><FaTiktok /></a>
                 </div>
 
                 <div className={styles.footerLeft}>

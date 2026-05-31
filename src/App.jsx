@@ -1,5 +1,6 @@
+import Header from "./web/header";
+import Body from "./web/body";
 import Footer from "./web/footer";
-import Header from "./web/header"
 
 function App() {
     return (
@@ -7,6 +8,8 @@ function App() {
             <main className="main-content">
                 <Header />
             </main>
+
+            <Body />
 
             <Footer />
         </div>

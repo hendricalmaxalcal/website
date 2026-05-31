@@ -30,7 +30,7 @@
 
 .footerRight a {
     color: rgb(59, 177, 152);
-    font-size: 35px;
+    font-size: 30px;
     transition: 0.3s;
 }
 
@@ -258,5 +258,167 @@
 
     .footerRight a {
         font-size: 30px;
+    }
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+.body {
+    padding: 40px;
+}
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    margin-bottom: 80px;
+}
+
+.introText {
+    flex: 1;
+}
+
+.introText h1 {
+    font-size: 3rem;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.introText p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.introText button {
+    margin-top: 20px;
+
+    border: none;
+    background-color: white;
+    color: #2563eb;
+    border: 1px rgb(145, 145, 249) solid;
+    
+
+    padding: 12px 24px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+.introText button:hover {
+    transform: translateY(-2px);
+    background: #2563eb;
+    color: white;
+}
+
+.introImage {
+    flex: 1;
+}
+
+.introImage img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* SERVICES */
+
+.services,
+.products {
+    margin-bottom: 80px;
+}
+
+.services h2,
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2563eb;
+}
+
+/* GRID */
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* SERVICE CARDS */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2563eb;
+}
+
+/* PRODUCT CARDS */
+
+.productCard {
+    background: white;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.productCard img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.productCard h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .body {
+        padding: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .introText h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .introText p {
+        text-align: center;
+    }
+
+    .introText button {
+        display: block;
+        margin: 20px auto;
     }
 }
