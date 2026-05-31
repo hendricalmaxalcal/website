@@ -104,12 +104,14 @@ function Header() {
             </nav>
 
             {/* ACTION BUTTONS */}
-            <div className={styles.actions}>
+            <div className={styles.mobileActions}>
                 <button className={styles.secondaryBtn}>
                     Customer Care
                 </button>
 
-                <button>Get Started</button>
+                <button>
+                    Get Started
+                </button>
             </div>
         </header>
     );
